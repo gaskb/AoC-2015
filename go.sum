@@ -1,0 +1,6 @@
+github.com/gaskb/fileutils v0.0.0-20210207191338-56f633f5ad2b h1:LM+6Yai9kHHh+YrRpEfcD/xwdjq+GOzYV+Bomhsfkvs=
+github.com/gaskb/fileutils v0.0.0-20210207191338-56f633f5ad2b/go.mod h1:HZXEiYFL/xv+OBN3HoGDlDRUKT/xXhxD2lNm8bvgnXE=
+github.com/gaskb/fileutils v1.0.1 h1:bFVsjSkksEeWW0pynXUDti4ZaG3QLHup1SlQlI/GEik=
+github.com/gaskb/fileutils v1.0.1/go.mod h1:HZXEiYFL/xv+OBN3HoGDlDRUKT/xXhxD2lNm8bvgnXE=
+github.com/gaskb/fileutils v1.0.2 h1:ZlaEyGNWCqpSHJaB3OYz4p3l3h4L5vkybm5WGCb1bkQ=
+github.com/gaskb/fileutils v1.0.2/go.mod h1:HZXEiYFL/xv+OBN3HoGDlDRUKT/xXhxD2lNm8bvgnXE=

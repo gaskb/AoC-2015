@@ -1,0 +1,48 @@
+{
+  "name": "aoc-2015",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run clean && babel -D src -d build",
+    "build:dev": "babel -D --watch src --out-dir build",
+    "clean": "rm -rf build",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "preversion": "npm run lint",
+    "start:dev": "nodemon --signal SIGTERM --watch src --watch .env --exec babel-node ./src/main.js",
+    "start:runner": "nodemon --signal SIGTERM --watch $DAY --watch .env --exec babel-node $DAY/$DAY.js",
+    "start:runner2": "nodemon --signal SIGTERM --watch $DAY --watch .env --exec babel-node $DAY/$DAY-2.js",
+    "start:staticRunner": "nodemon --signal SIGTERM --watch .env --exec babel-node $DAY/$DAY.js",
+    "start": "node ./build/main.js"
+  },
+  "nodemonConfig": {
+    "delay": 2000
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "babel-eslint": "^10.1.0",
+    "mocha": "^8.2.1",
+    "mermaid.cli": "^0.5.1"
+  },
+  "optionalDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.1",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.5.3"
+  }
+}
